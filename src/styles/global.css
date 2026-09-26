@@ -73,6 +73,31 @@
     min-height: 44px;
     min-width: 44px;
   }
+
+  /* High Visibility Headliners */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #0f2537;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+  }
 }
 
 /* Card Hover Float Animation */

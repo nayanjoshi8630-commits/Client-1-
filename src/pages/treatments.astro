@@ -303,28 +303,55 @@ const treatmentsList = [
     const filterButtons = document.querySelectorAll(".filter-tab");
     const cards = document.querySelectorAll(".treatment-card");
 
+    function applyFilter(filter: string | null) {
+      if (!filter) return;
+
+      filterButtons.forEach((b) => {
+        b.classList.remove("active-tab", "bg-[#0D9488]", "text-white", "shadow-xs");
+        b.classList.add("text-[#475569]");
+      });
+
+      const activeBtn = Array.from(filterButtons).find((b) => b.getAttribute("data-filter") === filter);
+      if (activeBtn) {
+        activeBtn.classList.add("active-tab", "bg-[#0D9488]", "text-white", "shadow-xs");
+        activeBtn.classList.remove("text-[#475569]");
+      }
+
+      cards.forEach((card) => {
+        const category = card.getAttribute("data-category");
+        if (filter === "all" || category === filter) {
+          (card as HTMLElement).style.display = "flex";
+        } else {
+          (card as HTMLElement).style.display = "none";
+        }
+      });
+    }
+
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
         const filter = btn.getAttribute("data-filter");
-
-        filterButtons.forEach((b) => {
-          b.classList.remove("active-tab", "bg-[#0D9488]", "text-white", "shadow-xs");
-          b.classList.add("text-[#475569]");
-        });
-
-        btn.classList.add("active-tab", "bg-[#0D9488]", "text-white", "shadow-xs");
-        btn.classList.remove("text-[#475569]");
-
-        cards.forEach((card) => {
-          const category = card.getAttribute("data-category");
-          if (filter === "all" || category === filter) {
-            (card as HTMLElement).style.display = "flex";
-          } else {
-            (card as HTMLElement).style.display = "none";
-          }
-        });
+        applyFilter(filter);
       });
     });
+
+    function checkHash() {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        const matchedCard = document.getElementById(hash);
+        if (matchedCard) {
+          const category = matchedCard.getAttribute("data-category");
+          if (category) {
+            applyFilter(category);
+          }
+          setTimeout(() => {
+            matchedCard.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+      }
+    }
+
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
   }
 
   setupTreatmentFilter();
