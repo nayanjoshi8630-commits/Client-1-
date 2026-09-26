@@ -49,12 +49,10 @@ const treatmentLinks = [
 
 const primaryNavItems = [
   { label: "Treatments", href: "/treatments", hasDropdown: true },
-  { label: "Book Appointment", href: "/appointment", hasDropdown: false },
   { label: "Smile Gallery", href: "/gallery", hasDropdown: false },
   { label: "About Doctors", href: "/about", hasDropdown: false },
-  { label: "Directions", href: "/directions", hasDropdown: false },
   { label: "Reviews", href: "/reviews", hasDropdown: false },
-  { label: "Contact", href: "/contact", hasDropdown: false },
+  { label: "Contact & Directions", href: "/contact", hasDropdown: false },
 ];
 ---
 
@@ -353,20 +351,6 @@ const primaryNavItems = [
         </div>
       </div>
 
-      <a
-        href="/appointment"
-        class:list={[
-          "flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-colors",
-          pathname.startsWith("/appointment") ? "bg-[#E6FFFA] text-[#0D9488]" : "text-[#0F2537] hover:bg-slate-50"
-        ]}
-      >
-        <div class="flex items-center gap-2">
-          <span>Book Appointment</span>
-          <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded">Online Slot</span>
-        </div>
-        <span class="text-xs text-slate-400">→</span>
-      </a>
-
       <!-- Other Mobile Links -->
       <a
         href="/gallery"
@@ -391,17 +375,6 @@ const primaryNavItems = [
       </a>
 
       <a
-        href="/directions"
-        class:list={[
-          "flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-colors",
-          pathname.startsWith("/directions") ? "bg-[#E6FFFA] text-[#0D9488]" : "text-[#0F2537] hover:bg-slate-50"
-        ]}
-      >
-        <span>Google Map Directions & Routes</span>
-        <span class="text-xs text-slate-400">→</span>
-      </a>
-
-      <a
         href="/reviews"
         class:list={[
           "flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-colors",
@@ -422,7 +395,7 @@ const primaryNavItems = [
           pathname.startsWith("/contact") ? "bg-[#E6FFFA] text-[#0D9488]" : "text-[#0F2537] hover:bg-slate-50"
         ]}
       >
-        <span>Contact & Hours</span>
+        <span>Contact & Directions</span>
         <span class="text-xs text-slate-400">→</span>
       </a>
     </div>
