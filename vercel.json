@@ -1,23 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    },
-    {
-      "source": "/_astro/(.*)",
-      "destination": "/_astro/$1"
-    },
-    {
-      "source": "/images/(.*)",
-      "destination": "/images/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
-  ]
+  "trailingSlash": false
 }
