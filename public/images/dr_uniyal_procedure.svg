@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="operatoryWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="scrubNavy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F2A6B"/>
+    </linearGradient>
+    <linearGradient id="oralLampBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFAA00" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#FF7A00" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF5500" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clinic Background with Vertical Chevron Wallpaper -->
+  <rect width="600" height="700" fill="url(#operatoryWall)"/>
+  <g opacity="0.15" stroke="#64748B" stroke-width="2">
+    <path d="M50 0 L70 700 M120 0 L140 700 M190 0 L210 700 M260 0 L280 700 M330 0 L350 700 M400 0 L420 700 M470 0 L490 700 M540 0 L560 700"/>
+  </g>
+
+  <!-- Blue Surgical Light Housing Illuminating the Oral Cavity -->
+  <g transform="translate(420, 180)">
+    <path d="M-80 -80 L0 -20 L30 40" stroke="#CBD5E1" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <ellipse cx="40" cy="50" rx="42" ry="32" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3"/>
+    <ellipse cx="40" cy="50" rx="32" ry="22" fill="#EA580C"/>
+    <!-- Intense Warm Amber Illumination Cone Pointing Straight into Patient's Mouth -->
+    <polygon points="20,65 -160,420 30,420 55,65" fill="url(#oralLampBeam)"/>
+  </g>
+
+  <!-- Reclining Patient (Bottom Center/Right) -->
+  <g transform="translate(250, 480)">
+    <!-- Patient Reclining Back in Dental Chair -->
+    <path d="M-80 50 L250 50 L250 180 L-80 180 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="3"/>
+    
+    <!-- Patient Head Backwards with Open Mouth for Precision Treatment -->
+    <circle cx="80" cy="40" r="48" fill="#F0C7A6"/>
+    <!-- Patient Mouth Illuminated with Surgical Light -->
+    <ellipse cx="65" cy="18" rx="16" ry="12" fill="#EF4444"/>
+    <ellipse cx="65" cy="18" rx="12" ry="8" fill="#7F1D1D"/>
+    <!-- Patient Upper & Lower Teeth under Light -->
+    <path d="M55 14 Q65 10 75 14" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+    <path d="M56 22 Q65 26 74 22" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+
+    <!-- Green Surgical Patient Bib / Drape -->
+    <path d="M-10 60 C30 50 120 50 180 60 L200 180 L-30 180 Z" fill="#0D9488" stroke="#0F766E" stroke-width="3"/>
+  </g>
+
+  <!-- Dr. Ashish Uniyal (Left/Center - Close-up Dental Surgery Action) -->
+  <g transform="translate(80, 180)">
+    <!-- Doctor Upper Torso in Professional Navy Scrubs -->
+    <path d="M30 200 C30 140 100 120 180 120 C260 120 310 140 330 200 L340 450 L10 450 Z" fill="url(#scrubNavy)"/>
+    
+    <!-- Doctor Scrub Embroidery: Dr. Ashish Uniyal Dental Surgeon -->
+    <rect x="235" y="240" width="70" height="24" rx="3" fill="#FFFFFF" opacity="0.9"/>
+    <text x="270" y="252" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="900" fill="#0F172A" text-anchor="middle">Dr. Ashish Uniyal</text>
+    <text x="270" y="260" font-family="sans-serif" font-size="6" font-weight="bold" fill="#0284C7" text-anchor="middle">Dental Surgeon</text>
+
+    <!-- Doctor Neck & Head Tilted Downward in Intense Clinical Focus -->
+    <path d="M160 110 L160 140 L210 140 L210 110 Z" fill="#E2B18E"/>
+    <ellipse cx="190" cy="70" rx="55" ry="60" fill="#F0C7A6"/>
+
+    <!-- Well-groomed Dark Hair -->
+    <path d="M135 65 C130 -10 180 -25 240 5 C250 35 240 60 235 70 C220 50 200 45 180 50 C160 45 145 50 135 65 Z" fill="#0F172A"/>
+
+    <!-- Black Medical KN95 Face Mask securely covering mouth & nose -->
+    <path d="M142 55 C135 110 240 115 235 55 Z" fill="#18181B" stroke="#27272A" stroke-width="2"/>
+    <!-- Mask Elastic Ear-loop -->
+    <path d="M142 60 C130 50 135 30 145 35" stroke="#3F3F46" stroke-width="2" fill="none"/>
+
+    <!-- Black Modern Wire-Rim Eyeglasses -->
+    <rect x="150" y="32" width="34" height="26" rx="8" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <rect x="192" y="32" width="34" height="26" rx="8" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <line x1="184" y1="44" x2="192" y2="44" stroke="#0F172A" stroke-width="3"/>
+    <!-- Intense Focused Eyes looking down at tooth -->
+    <circle cx="167" cy="46" r="4" fill="#0F172A"/>
+    <circle cx="209" cy="46" r="4" fill="#0F172A"/>
+
+    <!-- Arms & Hands in White Sterile Powder-Free Latex Examination Gloves -->
+    <!-- Left Hand Holding Dental Mirror / Explorer Tool -->
+    <path d="M100 240 L190 280 L235 260" stroke="url(#scrubNavy)" stroke-width="40" stroke-linecap="round" fill="none"/>
+    <ellipse cx="245" cy="255" rx="16" ry="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="245" y1="255" x2="270" y2="280" stroke="#94A3B8" stroke-width="4"/>
+    <circle cx="272" cy="282" r="5" fill="#E2E8F0" stroke="#94A3B8"/>
+
+    <!-- Right Hand Operating High-Speed Air Turbine Handpiece with Irrigation -->
+    <path d="M280 250 L260 310 L230 330" stroke="url(#scrubNavy)" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <!-- White Glove with Precision Fingers -->
+    <ellipse cx="225" cy="335" rx="18" ry="15" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Handpiece Tubing & Metallic Head -->
+    <path d="M190 380 Q210 350 220 335" stroke="#CBD5E1" stroke-width="8" fill="none"/>
+    <line x1="225" y1="335" x2="250" y2="345" stroke="#94A3B8" stroke-width="6"/>
+    <!-- Micro Water Spray Fog & LED Illumination at Burr -->
+    <circle cx="252" cy="346" r="6" fill="#38BDF8" opacity="0.8"/>
+  </g>
+
+  <!-- Clinic Detail Strip at Bottom -->
+  <rect x="25" y="625" width="550" height="55" rx="14" fill="#0F2537" opacity="0.95"/>
+  <text x="45" y="650" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="13" fill="#FFFFFF">Direct Clinical Procedure in Progress</text>
+  <text x="45" y="668" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#38BDF8">Single-Sitting Rotary Root Canal &amp; Micro-Prep under High Intensity Surgical Light</text>
+</svg>

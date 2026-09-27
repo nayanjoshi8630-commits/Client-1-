@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roadSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="topPylonBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="lowerBoardNavy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Roadway Context -->
+  <rect width="600" height="800" fill="url(#roadSky)"/>
+  <!-- Road Asphalt Ground -->
+  <rect x="0" y="620" width="600" height="180" fill="#334155"/>
+  <rect x="0" y="610" width="600" height="15" fill="#64748B"/>
+
+  <!-- Background Buildings (Balawala Main Road Shops) -->
+  <rect x="0" y="280" width="220" height="340" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="10" y="320" width="100" height="120" fill="#FFFFFF" stroke="#94A3B8"/>
+  <text x="60" y="360" font-family="sans-serif" font-size="8" font-weight="bold" fill="#0F2537" text-anchor="middle">बोड़ाई जी कम्यूनिकेशन</text>
+  <text x="60" y="380" font-family="sans-serif" font-size="6.5" fill="#475569" text-anchor="middle">Money Transfer &amp; Photo</text>
+
+  <!-- Background Car passing by (White Hatchback) -->
+  <g transform="translate(420, 520)">
+    <rect x="0" y="40" width="170" height="70" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="25" y="10" width="120" height="45" rx="8" fill="#F1F5F9" stroke="#94A3B8"/>
+    <circle cx="35" cy="110" r="18" fill="#1E293B"/>
+    <circle cx="140" cy="110" r="18" fill="#1E293B"/>
+    <rect x="55" y="80" width="65" height="18" rx="2" fill="#FFFFFF" stroke="#64748B"/>
+    <text x="87" y="93" font-family="monospace" font-size="9" font-weight="bold" fill="#0F172A" text-anchor="middle">UK07BD1406</text>
+  </g>
+
+  <!-- Main Concrete Utility Pole Supporting Roadside Signboard -->
+  <rect x="400" y="0" width="45" height="700" fill="#64748B" stroke="#475569" stroke-width="2"/>
+  <line x1="0" y1="60" x2="600" y2="120" stroke="#1E293B" stroke-width="3"/>
+  <line x1="0" y1="80" x2="600" y2="140" stroke="#1E293B" stroke-width="2"/>
+  <line x1="0" y1="110" x2="600" y2="170" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Metal Mounting Frame & Support Struts -->
+  <rect x="140" y="160" width="280" height="600" fill="none" stroke="#1E293B" stroke-width="5"/>
+  <line x1="140" y1="400" x2="420" y2="400" stroke="#1E293B" stroke-width="4"/>
+  <line x1="420" y1="200" x2="400" y2="200" stroke="#1E293B" stroke-width="6"/>
+  <line x1="420" y1="600" x2="400" y2="600" stroke="#1E293B" stroke-width="6"/>
+
+  <!-- 1. UPPER SIGNBOARD: "दांतों का अस्पताल" -->
+  <rect x="150" y="170" width="260" height="250" rx="8" fill="url(#topPylonBlue)" stroke="#3B82F6" stroke-width="3"/>
+  
+  <!-- Tooth Logo with Golden Root -->
+  <g transform="translate(170, 185)">
+    <path d="M15 5 C10 15 5 25 10 35 C15 35 20 25 25 25 C30 25 35 35 40 35 C45 25 40 15 35 5 Z" fill="none" stroke="#38BDF8" stroke-width="2"/>
+    <path d="M10 20 L25 45 M40 20 L25 45" stroke="#FBBF24" stroke-width="2"/>
+  </g>
+
+  <!-- Large Bold Hindi Signboard Text -->
+  <text x="280" y="260" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" text-anchor="middle">दांतों</text>
+  <text x="280" y="315" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle">का</text>
+  <text x="280" y="375" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="40" fill="#FFFFFF" text-anchor="middle">अस्पताल</text>
+
+  <!-- White Phone Strip on Upper Board -->
+  <rect x="150" y="390" width="260" height="30" rx="0" fill="#FFFFFF"/>
+  <text x="280" y="411" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="15" fill="#DC2626" text-anchor="middle">✆ 7018021512</text>
+
+  <!-- 2. LOWER SIGNBOARD: "उनियाल डेन्टल क्लीनिक" -->
+  <rect x="155" y="445" width="250" height="255" rx="6" fill="url(#lowerBoardNavy)" stroke="#38BDF8" stroke-width="2"/>
+
+  <!-- Logo & Title -->
+  <text x="210" y="475" font-family="sans-serif" font-size="11" font-weight="bold" fill="#38BDF8">Uniyal Dental Care</text>
+  <text x="325" y="478" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="17" fill="#FFFFFF" text-anchor="middle">उनियाल</text>
+  <text x="280" y="505" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="18" fill="#FFFFFF" text-anchor="middle">डेन्टल क्लीनिक</text>
+
+  <!-- Doctor Qualifications Box -->
+  <rect x="165" y="520" width="112" height="42" rx="4" fill="#1E3A5F" stroke="#38BDF8" stroke-width="1"/>
+  <text x="221" y="534" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Dr. Ashish Uniyal</text>
+  <text x="221" y="545" font-family="sans-serif" font-size="6.5" fill="#BAE6FD" text-anchor="middle">(Oral &amp; Dental Surgeon)</text>
+  <text x="221" y="555" font-family="sans-serif" font-size="6" fill="#FDE047" text-anchor="middle">HNB Medical University</text>
+
+  <rect x="283" y="520" width="112" height="42" rx="4" fill="#1E3A5F" stroke="#38BDF8" stroke-width="1"/>
+  <text x="339" y="534" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Dr. Ashish Lakhera</text>
+  <text x="339" y="545" font-family="sans-serif" font-size="6.5" fill="#BAE6FD" text-anchor="middle">(Dental Surgeon)</text>
+  <text x="339" y="555" font-family="sans-serif" font-size="6" fill="#BAE6FD" text-anchor="middle">Consultant</text>
+
+  <!-- 3 Clinical Sample Images on Board -->
+  <g transform="translate(165, 570)">
+    <!-- OPG X-ray Image -->
+    <rect x="0" y="0" width="70" height="50" rx="3" fill="#0F172A" stroke="#475569"/>
+    <text x="35" y="28" font-family="sans-serif" font-size="7" fill="#38BDF8" text-anchor="middle">Digital RVG</text>
+    <path d="M15 35 Q35 15 55 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <!-- Patient Whitening Treatment Image -->
+    <rect x="80" y="0" width="70" height="50" rx="3" fill="#0284C7" stroke="#475569"/>
+    <text x="115" y="28" font-family="sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle">Laser RCT</text>
+    <!-- Implant Procedure Image -->
+    <rect x="160" y="0" width="70" height="50" rx="3" fill="#0F766E" stroke="#475569"/>
+    <text x="195" y="28" font-family="sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle">3D Implants</text>
+  </g>
+
+  <!-- Timing and Phone Bottom Strip -->
+  <rect x="155" y="630" width="250" height="30" fill="#991B1B"/>
+  <text x="280" y="643" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#FEF08A" text-anchor="middle">Timing: 9:30 am to 1:00 pm  4:00 pm to 9:00 pm</text>
+  <text x="280" y="654" font-family="sans-serif" font-size="8.5" font-weight="900" fill="#FFFFFF" text-anchor="middle">✆ 7018021512</text>
+  
+  <rect x="155" y="660" width="250" height="30" rx="0" fill="#DC2626"/>
+  <text x="280" y="680" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">Call: +91 70180 21512</text>
+
+  <!-- Landmark Callout Badge -->
+  <g transform="translate(30, 720)">
+    <rect x="0" y="0" width="540" height="60" rx="14" fill="#0F2537"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="13" fill="#FFFFFF">Balawala Main Road Landmark Signboard</text>
+    <text x="20" y="44" font-family="'Inter', sans-serif" font-size="10" fill="#38BDF8">Directly across Malsi Puliya | High visibility landmark for visiting patients</text>
+  </g>
+</svg>

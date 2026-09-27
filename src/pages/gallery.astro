@@ -31,7 +31,7 @@ const cases = [
     outcome:
       "Acute throbbing pain eliminated immediately through rotary canal disinfection followed by high-strength ceramic crown placement.",
     badge: "Endodontics",
-    imgSrc: "/images/dental_operatory.svg",
+    imgSrc: "/images/dr_uniyal_procedure.svg",
   },
   {
     title: "Midline Gap Closure & Discoloration Masking",
@@ -44,71 +44,177 @@ const cases = [
     imgSrc: "/images/clear_aligners.svg",
   },
 ];
+
+const facilityPhotos = [
+  {
+    title: "Clinic Exterior & Entrance at Night",
+    caption:
+      "Main street presence on Balawala Main Road near Malsi Puliya with bright LED signage.",
+    tag: "Exterior Landmark",
+    imgSrc: "/images/clinic_storefront.svg",
+  },
+  {
+    title: "Gentle Pediatric Dental Experience",
+    caption:
+      "Dr. Ashish Uniyal with a cheerful, proud young patient giving enthusiastic thumbs-up after checkup.",
+    tag: "Patient Experience",
+    imgSrc: "/images/dr_ashish_uniyal.svg",
+  },
+  {
+    title: "High-Output Surgical Lighting & Micro-Procedure",
+    caption:
+      "Sterile surgical operatory with focused air turbine handpiece, water coolant, and protective mask.",
+    tag: "Clinical Precision",
+    imgSrc: "/images/dr_uniyal_procedure.svg",
+  },
+  {
+    title: "Roadside Pylon & Direction Signboard",
+    caption:
+      "The famous blue 'दांतों का अस्पताल' roadside pylon sign serving as the primary landmark in Balawala.",
+    tag: "Roadside Landmark",
+    imgSrc: "/images/clinic_landmark_board.svg",
+  },
+  {
+    title: "Full Operatory Suite & Ergonomic Chair",
+    caption:
+      "Ergonomic treatment couch, air-conditioned patient chamber, and wall-mounted medical credentials.",
+    tag: "Operatory Suite",
+    imgSrc: "/images/clinic_operatory_full.svg",
+  },
+  {
+    title: "Sterile Countertop & Instrument Station",
+    caption:
+      "Autoclaved instrument sets, ultrasonic scalers, digital RVG x-ray sensor units, and sterile trays.",
+    tag: "Hygienic Sterilization",
+    imgSrc: "/images/dental_operatory.svg",
+  },
+];
 ---
 
 <Layout
-  title="Before & After Smile Transformations | Uniyal Oro Dental"
-  description="Explore real patient transformations, dental implant restorations, and clear aligner results from Uniyal Oro Dental Clinic in Balawala, Dehradun."
+  title="Clinical Gallery & Real Clinic Photos | Uniyal Oro Dental"
+  description="Explore real patient transformations, authentic clinic photos, operatory views, and clinical care in Balawala, Dehradun at Uniyal Oro Dental Clinic."
 >
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-20">
     <header class="text-center max-w-3xl mx-auto space-y-4">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E6FFFA] border border-[#0D9488]/30 text-xs font-semibold text-[#0D9488]">
-        <span>✨ Clinical Outcomes & Smile Makeovers</span>
+        <span>✨ Real Clinic Facility &amp; Clinical Outcomes</span>
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#0F2537]">
-        Real Smile Transformations
+        Inside Uniyal Oro Dental Clinic
       </h1>
       <p class="text-base sm:text-lg text-[#475569] leading-relaxed">
-        See how precision implantology, clear aligners, and aesthetic restorations bring back chewing power, confidence, and radiant smiles for families in Dehradun.
+        Authentic photos from our Balawala clinic — explore our modern operatories, landmark roadside signage, gentle doctor-patient interactions, and documented smile restorations.
       </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {cases.map((c) => (
-        <article class="rounded-3xl border border-[#E2E8F0] bg-white p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-sm card-hover-float">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-[#0D9488] bg-[#E6FFFA] px-3 py-1 rounded-full border border-[#0D9488]/30">
-                {c.badge}
-              </span>
-              <span class="text-xs text-[#475569] font-medium">Patient Age: {c.patientAge}</span>
-            </div>
+    <!-- 1. Real Facility Photo Tour -->
+    <section class="space-y-8">
+      <div class="border-b border-[#E2E8F0] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0D9488]">Authentic Tour</span>
+          <h2 class="text-2xl font-black text-[#0F2537] mt-0.5">Balawala Clinic Facility &amp; Care In Action</h2>
+        </div>
+        <p class="text-xs text-slate-500">Malsi Puliya, Balawala Main Road</p>
+      </div>
 
-            <div class="rounded-2xl overflow-hidden border border-[#E2E8F0] bg-slate-50 h-56 flex items-center justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {facilityPhotos.map((f) => (
+          <div class="rounded-3xl border border-[#CBD5E1] bg-white overflow-hidden shadow-xs group flex flex-col justify-between hover:border-[#0D9488] transition-colors">
+            <div class="h-64 overflow-hidden relative bg-slate-100">
               <img
-                src={c.imgSrc}
-                alt={c.title}
-                class="w-full h-full object-cover"
+                src={f.imgSrc}
+                alt={f.title}
+                class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                 loading="lazy"
               />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#0F2537]/85 backdrop-blur-xs text-[11px] font-bold text-white shadow-xs">
+                {f.tag}
+              </span>
+            </div>
+            <div class="p-5 space-y-2">
+              <h3 class="text-base font-extrabold text-[#0F2537] leading-snug">{f.title}</h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-normal">{f.caption}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 2. Smile Transformations -->
+    <section class="space-y-8">
+      <div class="border-b border-[#E2E8F0] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-[#0D9488]">Clinical Results</span>
+          <h2 class="text-2xl font-black text-[#0F2537] mt-0.5">Documented Patient Restorations</h2>
+        </div>
+        <p class="text-xs text-slate-500">Implantology, Clear Aligners &amp; Laser Endodontics</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {cases.map((c) => (
+          <article class="rounded-3xl border border-[#E2E8F0] bg-white p-6 sm:p-8 flex flex-col justify-between space-y-6 shadow-sm card-hover-float">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-[#0D9488] bg-[#E6FFFA] px-3 py-1 rounded-full border border-[#0D9488]/30">
+                  {c.badge}
+                </span>
+                <span class="text-xs text-[#475569] font-medium">Patient Age: {c.patientAge}</span>
+              </div>
+
+              <div class="rounded-2xl overflow-hidden border border-[#E2E8F0] bg-slate-50 h-56 flex items-center justify-center">
+                <img
+                  src={c.imgSrc}
+                  alt={c.title}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <h2 class="text-xl font-bold text-[#0F2537] tracking-tight">
+                {c.title}
+              </h2>
+
+              <div class="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1 text-xs">
+                <span class="font-bold text-[#0D9488] block">{c.treatment}</span>
+                <span class="text-[#475569] block">Timeline: {c.duration}</span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                {c.outcome}
+              </p>
             </div>
 
-            <h2 class="text-xl font-bold text-[#0F2537] tracking-tight">
-              {c.title}
-            </h2>
-
-            <div class="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1 text-xs">
-              <span class="font-bold text-[#0D9488] block">{c.treatment}</span>
-              <span class="text-[#475569] block">Timeline: {c.duration}</span>
+            <div class="pt-4 border-t border-[#E2E8F0] flex items-center justify-between">
+              <a
+                href="/contact"
+                class="text-xs font-bold text-[#0D9488] hover:text-[#0F766E] inline-flex items-center gap-1 group"
+              >
+                <span>Consult on Similar Case</span>
+                <span class="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+              <span class="text-[11px] text-[#475569]">Balawala Clinic</span>
             </div>
+          </article>
+        ))}
+      </div>
+    </section>
 
-            <p class="text-xs sm:text-sm text-[#475569] leading-relaxed">
-              {c.outcome}
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-[#E2E8F0] flex items-center justify-between">
-            <a
-              href="/contact"
-              class="text-xs font-bold text-[#0D9488] hover:text-[#0F766E] inline-flex items-center gap-1 group"
-            >
-              <span>Consult on Similar Case</span>
-              <span class="transition-transform group-hover:translate-x-1">→</span>
-            </a>
-            <span class="text-[11px] text-[#475569]">Balawala Clinic</span>
-          </div>
-        </article>
-      ))}
+    <!-- Consultation CTA Banner -->
+    <div class="rounded-3xl bg-gradient-to-r from-[#0F2537] to-[#1E3A5F] p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div class="space-y-2 text-center md:text-left">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#38BDF8]">Personalized Treatment</span>
+        <h3 class="text-2xl sm:text-3xl font-black">Ready to Visit Us Near Malsi Puliya?</h3>
+        <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
+          Schedule your consultation with Dr. Ashish Uniyal. We offer same-day appointments and complete price estimates before starting.
+        </p>
+      </div>
+      <a
+        href="/contact#book"
+        class="px-8 py-3.5 rounded-xl font-extrabold text-sm text-[#0F2537] bg-[#38BDF8] hover:bg-sky-300 transition-colors shadow-lg shadow-sky-900/40 whitespace-nowrap"
+      >
+        Book Consultation Slot
+      </a>
     </div>
   </div>
 </Layout>
